@@ -1,0 +1,12 @@
+[
+    {
+        "username": "fueeh",
+        "password": "123",
+        "hashed_password": "$2y$10$xhbQoVP6u\/ULj2F4cGn6LOnmeGnjov2hrMZTLLyqchTDkWRO8CVAe"
+    },
+    {
+        "username": "jueee",
+        "password": "123",
+        "hashed_password": "$2y$10$7sVT.J\/Bb3qpllLpb1vS7ucelkPwyyFQszowrzlx1lJk8F2XKvml2"
+    }
+]

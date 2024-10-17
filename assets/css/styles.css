@@ -1,0 +1,197 @@
+body {
+  font-family: "Josefin Sans", sans-serif;
+  background-image: url("/assets/images/bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.josefin-sans {
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.title-container {
+  position: relative;
+  text-align: center;
+  margin-bottom: 200px; 
+}
+
+.eynlogo {
+  width: 400px;
+  height: 270px;
+  margin-bottom: 10px;
+}
+
+.title {
+  font-size: 1em;
+  color: #ffffff;
+  margin: 40px 0; /* Reduce el margen superior e inferior */
+  text-align: left;
+}
+
+.subtitle {
+  font-size: 3em;
+  color: #ffffff;
+  margin: auto 0;
+  position: fixed;
+  top: 460px;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.ready {
+  font-size: 2em;
+  color: #ffffff;
+  height: 40px;
+  width: 343px;
+  background-color: rgba(71, 71, 71, 0.5);
+  padding: 20px; 
+  border-radius: 20px;
+  position: fixed;
+  bottom: 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: left;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+}
+
+.container {
+  position: relative;
+  background: linear-gradient(
+    to right,
+    rgba(51, 51, 51, 0.7),
+    rgba(0, 0, 0, 0.3)
+  );
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  box-sizing: border-box;
+
+}
+
+.form-container {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.form-title {
+  font-size: 50px;
+  margin-top: 0px; 
+  color: #ffffff;
+}
+
+.password-container {
+  position: relative;
+  width: 100%; /* Cambia a 100% para que se ajuste al ancho del contenedor */
+  max-width: 500px; /* Establece un ancho máximo */
+}
+
+.password-container input {
+  width: 100%; /* Cambia a 100% para que se ajuste al ancho del contenedor */
+  padding-right: 10px; 
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px; 
+  align-items: center;
+}
+
+input {
+  font-size: 1em;
+  padding: 15px;
+  width: 100%; /* Cambia a 100% para que se ajuste al ancho del contenedor */
+  max-width: 500px; /* Establece un ancho máximo */
+  top: 30px;
+  font-weight: bold;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 200;
+  margin-top: 5px;
+  margin-bottom: 35px;
+  color: #ffffff;
+  background: transparent; 
+  border-radius: 12px;
+  border: 1px solid rgba(114, 48, 48, 0.205);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.50);
+}
+
+input::placeholder {
+  font-size: 1.2em;
+  color: #ffffff;
+  font-weight: 400; 
+}
+
+input:focus {
+  outline: none;
+  background: linear-gradient(
+    to right,
+    rgba(68, 68, 68, 0.7),
+    rgba(39, 56, 87, 0.2)
+  );
+  border: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+button {
+  font-size: 1.2em;
+  padding: 15px 30px;
+  background-color: rgba(73, 72, 72, 0.7);
+  width: 100%; /* Cambia a 100% para que se ajuste al ancho del contenedor */
+  max-width: 500px; /* Establece un ancho máximo */
+  color: white;
+  font-style: bold;
+  font-family: "Josefin Sans", sans-serif;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: rgba(60, 167, 206, 0.7);
+}
+
+/* Media Queries para pantallas de 1360x768 */
+@media (max-width: 1360px) {
+  .container {
+    width: 90%; /* Ajusta el ancho del contenedor */
+    height: auto; /* Ajusta la altura automáticamente */
+  }
+
+  .form-title {
+    font-size: 2em; /* Ajusta el tamaño de la fuente */
+  }
+
+  .input, .password-container input, button {
+    width: 90%; /* Ajusta el ancho de los inputs y botones */
+  }
+
+  .title-container, .subtitle, .ready {
+    left: 50%; /* Ajusta la posición de los elementos */
+    transform: translateX(-50%);
+    text-align: center; /* Centra el texto */
+  }
+
+  .subtitle, .ready {
+    position: static; /* Cambia la posición a estática */
+    margin-top: 20px; /* Añade margen superior */
+  }
+}
